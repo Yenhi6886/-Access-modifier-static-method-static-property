@@ -11,29 +11,25 @@ public class Student {
 
     //Mac dinh
     public Student() {
-        this.id = 0;
-        this.name = "Null";
         this.dateOfBirth = "01/01/2001";
         this.gender = "Male";
         this.classId = "C03";
-        this.gpa = 0.0;
-        this.major = "Null";
     }
 
     //Voi ten
-    public Student (String name) {
+    public Student(String name) {
         this.name = name;
     }
 
     //Ten va lop
-    public Student (String name,String classId) {
+    public Student(String name, String classId) {
         this.name = name;
-        this.classId= classId;
+        this.classId = classId;
     }
 
     //Full
-    public Student (int id,String name, String dateOfBirth, String gender, String classId, double gpa, String major) {
-        this.name= name;
+    public Student(int id, String name, String dateOfBirth, String gender, String classId, double gpa, String major) {
+        this.name = name;
         this.classId = classId;
         this.id = id;
         this.dateOfBirth = dateOfBirth;
@@ -99,8 +95,8 @@ public class Student {
     }
 
     //Diem trung binh moi
-    public void updateGPA(double TBNewGpa) {
-        this.gpa = TBNewGpa;
+    public void updateGPA(double newScore) {
+        this.gpa = newScore;
     }
 
     //Chuyen hoc sinh sang lop moi
@@ -114,13 +110,13 @@ public class Student {
     }
 
     public void displayInfo() {
-        System.out.println("ID: "+id);
-        System.out.println("Name: "+name);
-        System.out.println("Date: "+dateOfBirth);
-        System.out.println("Gender: "+gender);
-        System.out.println("Class: "+classId);
-        System.out.println("GPA: "+gpa);
-        System.out.println("Major: "+major);
-        System.out.println("Honor student: "+(isHonorStudent() ? "Yes" : "No"));
+        System.out.println("ID: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Date: " + dateOfBirth);
+        System.out.println("Gender: " + gender);
+        System.out.println("Class: " + classId);
+        System.out.println("GPA: " + gpa);
+        System.out.println("Major: " + major);
+        System.out.println("Honor student: " + (isHonorStudent() ? "Yes" : "No"));
     }
 }
